@@ -2,7 +2,7 @@ package org.example.fizzbuzz;
 
 public enum Classifications {
 
-    FIZZBUZZ(n -> "SORRY, NOT IMPLEMENTED YET"),
+    FIZZBUZZ(n -> "FizzBuzz"),
 
     UNCHANGED(n -> "SORRY, NOT IMPLEMENTED YET"),
 
