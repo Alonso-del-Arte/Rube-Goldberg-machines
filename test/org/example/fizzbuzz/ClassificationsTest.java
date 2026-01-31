@@ -23,6 +23,14 @@ class ClassificationsTest {
     }
 
     @Test
+    void testBuzzProcess() {
+        int n = RANDOM.nextInt();
+        String expected = "Buzz";
+        Object actual = Classifications.BUZZ.process(n);
+        assertEquals(expected, actual);
+    }
+
+    @Test
     void testFizzProcess() {
         int n = RANDOM.nextInt();
         String expected = "Fizz";
