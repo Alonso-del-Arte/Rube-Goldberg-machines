@@ -6,7 +6,7 @@ public enum Classifications {
 
     UNCHANGED(n -> n),
 
-    BUZZ(n -> "SORRY, NOT IMPLEMENTED YET"),
+    BUZZ(n -> "Buzz"),
 
     FIZZ(n -> "Fizz");
 
