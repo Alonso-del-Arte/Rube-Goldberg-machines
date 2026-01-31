@@ -15,4 +15,11 @@ class ClassificationsTest {
         assertEquals(expected, actual);
     }
 
+    @Test
+    void testUnchangedProcess() {
+        int expected = RANDOM.nextInt();
+        Object actual = Classifications.UNCHANGED.process(expected);
+        assertEquals(expected, actual);
+    }
+
 }
