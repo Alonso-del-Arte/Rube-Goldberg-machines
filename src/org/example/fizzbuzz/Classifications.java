@@ -8,7 +8,7 @@ public enum Classifications {
 
     BUZZ(n -> "SORRY, NOT IMPLEMENTED YET"),
 
-    FIZZ(n -> "SORRY, NOT IMPLEMENTED YET");
+    FIZZ(n -> "Fizz");
 
     private final Transformable transformation;
 
