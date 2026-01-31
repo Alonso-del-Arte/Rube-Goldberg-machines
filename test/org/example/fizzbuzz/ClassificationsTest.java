@@ -22,4 +22,12 @@ class ClassificationsTest {
         assertEquals(expected, actual);
     }
 
+    @Test
+    void testFizzProcess() {
+        int n = RANDOM.nextInt();
+        String expected = "Fizz";
+        Object actual = Classifications.FIZZ.process(n);
+        assertEquals(expected, actual);
+    }
+
 }
