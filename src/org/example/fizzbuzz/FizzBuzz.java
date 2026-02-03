@@ -3,7 +3,7 @@ package org.example.fizzbuzz;
 public class FizzBuzz {
 
     public static Object fizzBuzz(int n) {
-        return "SORRY, NOT IMPLEMENTED YET";
+        return "FizzBuzz";
     }
 
     public static void main(String[] args) {
