@@ -3,24 +3,11 @@ package org.example.fizzbuzz;
 public class FizzBuzz {
 
     public static Object fizzBuzz(int n) {
-        switch (n % 15) {
-            case -12:
-            case -9:
-            case -6:
-            case -3:
-            case 3:
-            case 6:
-            case 9:
-            case 12:
-                return "Fizz";
-            case -10:
-            case -5:
-            case 5:
-            case 10:
-                return "Buzz";
-            default:
-                return "FizzBuzz";
-        }
+        return switch (n % 15) {
+            case -12, -9, -6, -3, 3, 6, 9, 12 -> "Fizz";
+            case -10, -5, 5, 10 -> "Buzz";
+            default -> "FizzBuzz";
+        };
     }
 
     public static void main(String[] args) {
