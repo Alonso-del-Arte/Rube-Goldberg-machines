@@ -27,3 +27,12 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+### Miscellaneous ###
+src/draft/
+src/secrets/
+test/draft/
+test/secrets/
+localdevicenotes.txt
+scratchpad.txt
+tempnotes.md
