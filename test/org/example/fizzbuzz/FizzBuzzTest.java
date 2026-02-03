@@ -33,9 +33,9 @@ class FizzBuzzTest {
 
     @Test
     void testFizzNegative() {
-        int propNum = RANDOM.nextInt() | Integer.MIN_VALUE;
-        int remainder = propNum % 3;
-        int n = propNum - remainder;
+        int adjustment = 3 * RANDOM.nextInt(1, 5);
+        int propMult = -15 * RANDOM.nextInt(Short.MAX_VALUE);
+        int n = propMult - adjustment;
         String expected = "Fizz";
         Object actual = FizzBuzz.fizzBuzz(n);
         String message = "Reckoning FizzBuzz for " + n;
@@ -44,9 +44,9 @@ class FizzBuzzTest {
 
     @Test
     void testFizzPositive() {
-        int propNum = RANDOM.nextInt() & Integer.MAX_VALUE;
-        int remainder = propNum % 3;
-        int n = propNum - remainder;
+        int adjustment = 3 * RANDOM.nextInt(1, 5);
+        int propMult = 15 * RANDOM.nextInt(Short.MAX_VALUE);
+        int n = propMult + adjustment;
         String expected = "Fizz";
         Object actual = FizzBuzz.fizzBuzz(n);
         String message = "Reckoning FizzBuzz for " + n;
