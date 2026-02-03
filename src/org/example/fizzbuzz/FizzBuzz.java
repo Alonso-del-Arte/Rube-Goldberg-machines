@@ -4,7 +4,7 @@ public class FizzBuzz {
 
     public static Object fizzBuzz(int n) {
         if (n % 5 != 0) {
-            return "Fizzer";
+            return "Fizz";
         }
         return "FizzBuzz";
     }
