@@ -53,4 +53,26 @@ class FizzBuzzTest {
         assertEquals(expected, actual, message);
     }
 
+    @Test
+    void testBuzzNegative() {
+        int adjustment = 5 * RANDOM.nextInt(1, 3);
+        int propMult = -15 * RANDOM.nextInt(Short.MAX_VALUE);
+        int n = propMult - adjustment;
+        String expected = "Buzz";
+        Object actual = FizzBuzz.fizzBuzz(n);
+        String message = "Reckoning FizzBuzz for " + n;
+        assertEquals(expected, actual, message);
+    }
+
+    @Test
+    void testBuzzPositive() {
+        int adjustment = 5 * RANDOM.nextInt(1, 3);
+        int propMult = 15 * RANDOM.nextInt(Short.MAX_VALUE);
+        int n = propMult + adjustment;
+        String expected = "Buzz";
+        Object actual = FizzBuzz.fizzBuzz(n);
+        String message = "Reckoning FizzBuzz for " + n;
+        assertEquals(expected, actual, message);
+    }
+
 }
