@@ -3,6 +3,9 @@ package org.example.fizzbuzz;
 public class FizzBuzz {
 
     public static Object fizzBuzz(int n) {
+        if (n % 5 != 0) {
+            return "Fizz";
+        }
         return "FizzBuzz";
     }
 
