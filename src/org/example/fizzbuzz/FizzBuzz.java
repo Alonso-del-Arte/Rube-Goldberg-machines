@@ -9,14 +9,14 @@ public class FizzBuzz {
         int square = (remainder * remainder) % 15;
         try {
             return CLASSIFS[square].process(n);
-        } catch (ArrayIndexOutOfBoundsException aioobeOuter) {
+        } catch (ArrayIndexOutOfBoundsException excOuter) {
             try {
                 return CLASSIFS[square - 3].process(n);
-            } catch (ArrayIndexOutOfBoundsException aioobeMiddle) {
+            } catch (ArrayIndexOutOfBoundsException excMiddle) {
                 try {
+                    return CLASSIFS[square - 6].process(n);
+                } catch (ArrayIndexOutOfBoundsException excInner) {
                     return CLASSIFS[square - 8].process(n);
-                } catch (ArrayIndexOutOfBoundsException aioobeInner) {
-                    return CLASSIFS[square - 9].process(n);
                 }
             }
         }
