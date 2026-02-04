@@ -6,7 +6,8 @@ public class FizzBuzz {
         return switch (n % 15) {
             case -12, -9, -6, -3, 3, 6, 9, 12 -> "Fizz";
             case -10, -5, 5, 10 -> "Buzz";
-            default -> "FizzBuzz";
+            case 0 -> "FizzBuzz";
+            default -> n;
         };
     }
 
