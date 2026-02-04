@@ -75,4 +75,32 @@ class FizzBuzzTest {
         assertEquals(expected, actual, message);
     }
 
+    @Test
+    void testUnchangedNegative() {
+        int start = -15 * RANDOM.nextInt(Short.MAX_VALUE) - 1;
+        int end = start - 14;
+        for (int expected = start; expected > end; expected--) {
+            int modMult = (expected % 3) * (expected % 5);
+            if (modMult != 0) {
+                Object actual = FizzBuzz.fizzBuzz(expected);
+                String message = "Reckoning FizzBuzz for " + expected;
+                assertEquals(expected, actual, message);
+            }
+        }
+    }
+
+    @Test
+    void testUnchangedPositive() {
+        int start = 15 * RANDOM.nextInt(Short.MAX_VALUE) + 1;
+        int end = start + 14;
+        for (int expected = start; expected < end; expected++) {
+            int modMult = (expected % 3) * (expected % 5);
+            if (modMult != 0) {
+                Object actual = FizzBuzz.fizzBuzz(expected);
+                String message = "Reckoning FizzBuzz for " + expected;
+                assertEquals(expected, actual, message);
+            }
+        }
+    }
+
 }
