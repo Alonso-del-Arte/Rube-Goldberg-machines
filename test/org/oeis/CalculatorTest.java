@@ -1,9 +1,13 @@
 package org.oeis;
 
+import java.util.Random;
+
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
 class CalculatorTest {
+
+    private static final Random RANDOM = new Random();
 
     @Test
     void testIsPowerOfTwo() {
@@ -18,6 +22,13 @@ class CalculatorTest {
     @Test
     void testIntMinValIsNotPowerOfTwo() {
         int n = Integer.MIN_VALUE;
+        String msg = n + " should not be a power of 2";
+        assert !Calculator.isPowerOfTwo(n) : msg;
+    }
+
+    @Test
+    void testNegativeNumberIsNotPowerOfTwo() {
+        int n = RANDOM.nextInt(1, Integer.MAX_VALUE) | Integer.MIN_VALUE;
         String msg = n + " should not be a power of 2";
         assert !Calculator.isPowerOfTwo(n) : msg;
     }
