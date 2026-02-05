@@ -33,4 +33,10 @@ class CalculatorTest {
         assert !Calculator.isPowerOfTwo(n) : msg;
     }
 
+    @Test
+    void testZeroIsNotPowerOfTwo() {
+        String msg = "0 should not be power of 2";
+        assert !Calculator.isPowerOfTwo(0) : msg;
+    }
+
 }
