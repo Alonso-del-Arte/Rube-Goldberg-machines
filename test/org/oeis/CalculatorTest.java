@@ -15,4 +15,11 @@ class CalculatorTest {
         }
     }
 
+    @Test
+    void testIntMinValIsNotPowerOfTwo() {
+        int n = Integer.MIN_VALUE;
+        String msg = n + " should not be a power of 2";
+        assert !Calculator.isPowerOfTwo(n) : msg;
+    }
+
 }
