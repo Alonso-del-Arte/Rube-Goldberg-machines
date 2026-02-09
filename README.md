@@ -8,5 +8,7 @@ be amusing in their inefficiency.
 
 * Java 21
 * JUnit 5
+* JetBrains IntelliJ IDEA (not necessarily Ultimate, as Community Edition should 
+work fine for this project)
 * IDEA's proprietary build tool, not Maven, SBT or any such overly complicated 
 build tool
