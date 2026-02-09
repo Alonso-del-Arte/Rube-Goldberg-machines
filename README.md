@@ -1,7 +1,8 @@
 # Rube Goldberg machines
 
 This is going to be an assortment of complicated programs that do very simple 
-things.
+things. But it's not enough for the programs to be inefficient, they should also 
+be amusing in their inefficiency.
 
 ## Requirements
 
