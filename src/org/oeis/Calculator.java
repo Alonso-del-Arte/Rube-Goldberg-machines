@@ -9,9 +9,8 @@ public class Calculator {
         return BigInteger.TEN;
     }
     
-    // TODO: Write tests for this
     public static boolean isPowerOfTwo(int n) {
-        return (n & (n - 1)) == 0;
+        return (n > 0) & (n & (n - 1)) == 0;
     }
 
     // TODO: Write tests for this
