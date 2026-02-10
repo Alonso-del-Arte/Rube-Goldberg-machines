@@ -10,7 +10,14 @@ public class Calculator {
     }
     
     public static boolean isPowerOfTwo(int n) {
-        return (n > 0) & (n & (n - 1)) == 0;
+        if (n == 0) return false;
+        while (n != 1) {
+            if (n % 2 != 0) {
+                return false;
+            }
+            n >>= 1;
+        }
+        return true;
     }
 
     // TODO: Write tests for this
