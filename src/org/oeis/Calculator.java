@@ -11,7 +11,7 @@ public class Calculator {
     
     // TODO: Write tests for this
     public static boolean isPowerOfTwo(int n) {
-        return n > 0;
+        return (n & (n - 1)) == 0;
     }
 
     // TODO: Write tests for this
