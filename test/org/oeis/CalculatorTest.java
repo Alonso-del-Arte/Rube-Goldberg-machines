@@ -39,4 +39,17 @@ class CalculatorTest {
         assert !Calculator.isPowerOfTwo(0) : msg;
     }
 
+    @Test
+    void testNotPowerOfTwo() {
+        int basis = 2 * RANDOM.nextInt(16, 32) + 1;
+        int exponent = RANDOM.nextInt(9, 16);
+        int start = basis << exponent;
+        int end = start + 128;
+        String msgPart = " should not be a power of 2";
+        for (int n = start; n < end; n++) {
+            String msg = n + msgPart;
+            assert !Calculator.isPowerOfTwo(n) : msg;
+        }
+    }
+
 }
