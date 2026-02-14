@@ -22,7 +22,7 @@ public class Calculator {
 
     // TODO: Write tests for this
     public static boolean isPrime(int n) {
-        return false;
+        return true;
     }
 
 }
