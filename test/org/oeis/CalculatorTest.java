@@ -52,4 +52,22 @@ class CalculatorTest {
         }
     }
 
+    @Test
+    void testNegativeOneIsNotPrime() {
+        boolean opResult = Calculator.isPrime(-1);
+        assert !opResult : "-1 should not be prime";
+    }
+
+    @Test
+    void testZeroIsNotPrime() {
+        boolean opResult = Calculator.isPrime(0);
+        assert !opResult : "0 should not be prime";
+    }
+
+    @Test
+    void testPositiveOneIsNotPrime() {
+        boolean opResult = Calculator.isPrime(1);
+        assert !opResult : "1 should not be prime";
+    }
+
 }
